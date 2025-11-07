@@ -1,70 +1,103 @@
-# Getting Started with Create React App
+# StoryWeaver OPDS Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the StoryWeaver OPDS Frontend project! This is a React-based web application designed to present a visually appealing, user-friendly catalog of children’s storybooks by parsing and displaying data from the OPDS (Open Publication Distribution System) catalog published by StoryWeaver.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Project Overview
 
-### `npm start`
+StoryWeaver is an open-source platform offering multilingual children’s storybooks. This project focuses on creating the front-end user interface that allows users to browse, filter, select, and bulk download storybooks from the OPDS catalog XML feeds provided by the backend.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Current Features
 
-### `npm test`
+- Project initialized with React, React Router, and Axios for API communication.
+- Basic routing setup for future scalability.
+- Placeholder components setup (e.g., `BookCard`) to display storybook metadata such as title and thumbnail.
+- Service layer for API calls to backend endpoints (currently serving hardcoded demo data).
+- Basic project structure for components, pages, services, and context for state management.
+- Environment-configured for deployment-ready builds.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React.js for building interactive UI.
+- React Router for client-side routing.
+- Axios for handling HTTP requests to the backend API.
+- CSS Modules / Styled components for component-level styling (to be implemented).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Setup Instructions
 
-### `npm run eject`
+**1. Clone the repository:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+git clone <repo_url>
+cd opds-frontend
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**2. Install dependencies:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**3. Run locally:**
 
-## Learn More
+```bash
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The app will be available at `http://localhost:3000`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Folder Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+src/
+├── components/       # Reusable UI components such as BookCard
+├── pages/            # Page components for routing (e.g., Home, Catalog)
+├── services/         # API call functions
+├── context/          # React context for global state e.g. cart and filters management
+├── App.js            # Main component with routing setup
+├── index.js          # Entry point for React rendering
+```
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Next Steps / To-Do
 
-### Making a Progressive Web App
+- Integrate backend API to fetch real OPDS catalog data.
+- Implement OPDS XML parsing on backend and expose clean JSON endpoints.
+- Develop filtering UI (by language, category, author, reading level, etc.).
+- Add cart functionality for bulk story selection and downloading.
+- Implement pagination or infinite scrolling for large catalogs.
+- Design and apply responsive, accessible styling for better UX.
+- Write unit tests and integration tests for UI components.
+- Establish CI/CD pipeline for automated testing and deployment.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## How to Contribute
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Fork the repo and create feature branches for your tasks.
+- Follow coding standards and write clear commit messages.
+- Push frequent commits and open pull requests for review.
+- Participate in weekly sprint review and planning meetings.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contacts and Support
 
-### `npm run build` fails to minify
+For any questions or help, please reach out to:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Scrum Master: [Abhijith, babhijith58@gmail.com]
+- Frontend Lead: [SDK, duwaragesh01@gmail.com]
+- Backend Lead: [Nishhith, nnishchit48@gmail.com]
+-
+
+Happy coding! Let’s build an amazing OUPOSES catalog UI together!
